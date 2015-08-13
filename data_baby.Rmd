@@ -8,7 +8,7 @@ tables: yes
 graphics: yes
 latex_engine: xelatex
 highlight: zenburn
-toc: yes
+toc: no
 fig_width: 4
 fig_height: 2.6
 header-includes:
@@ -53,8 +53,6 @@ root_dir <- "/home/joebrew/Documents/data_baby/"
 source('helpers/my_theme.R')
 ```
 
-\newpage
-
 # Conception  
 
 ## It all starts with sex  
@@ -62,7 +60,12 @@ source('helpers/my_theme.R')
 You aren’t the only ones doing it, you know.  Of the 7 billion humans on earth, 4.6 billion are sexually active, and more than 3 billion have had sex in the last week.  The average adult is getting it on about 1.4 times per week.  
 
 ```{r}
-suppressWarnings(source(paste0(root_dir, 'icpsr/code/bla.R')))
+suppressWarnings(source(paste0(root_dir, 'frequency_sex/code/icpsr.R')))
+```
+
+
+```{r}
+suppressWarnings(source(paste0(root_dir, 'icpsr/code/icpsr.R')))
 ```
 
 ```{r, fig.width= 4, fig.height = 3, fig.align = 'center'}
