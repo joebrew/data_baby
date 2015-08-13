@@ -1,0 +1,106 @@
+---
+title: "Data Baby (outline)"
+output: html_document
+---
+
+A walk through the numbers, from conception through infancy
+
+## Conception
+* Sexual frequency  
+* Timing 
+    * Menstrual cycle and how it affects fertility  
+    * Time of year - sports, academic outcomes, etc.
+* Stress and fertility 
+    * Individual level
+    * Group level (birth rates before and after catastrophes, etc.)
+* Gender
+    * Over time
+    * Dad's exercise levels
+* Birth control
+    * Effectiveness
+
+## Birth
+* When
+    * Due dates, etc.
+* Where
+    * Home vs. hospital
+    * Outcomes by countries
+* Who
+    * Fertility by race, age, marital status, etc.
+* How
+    * Procedures and costs
+        * By country
+* How much
+    * Cost by country
+
+
+## Names
+* Name prevalence over time
+    * Most popular boy/girl names by year
+    * Gender-switchers
+    * Famous events
+    * Famous people
+    * Extinct names (and depopularized names)
+    * Cross-ethnic naming
+    * % choosing family names
+    * Last name changes over time (hyphenation, taking mom's last name, etc.)
+* The impact of the name
+    * Job outcome
+    * Diminutive
+
+## Babyhood
+* Carrying (stroller, front, etc.)
+* Crying (% time, etc.)
+* Sleeping
+* Weight / height, etc.
+* Pacifier use
+* Breast-feeding
+* Potty training
+* Diaper choice (cloth vs. disposable) and impact
+
+## Education
+* Pre-k : does it matter?
+* Baby Einstein scam
+* "Moral" education - does going to church affect behavior?
+* Music 
+    * Listening to music (Mozart, etc.)
+    * Music lessons
+* Age of literacy as predictor of success
+* What factors actually matter
+
+## Language
+* Acquisiion
+    * Average age of monolinguals
+    * Age of understanding
+    * Sign language
+* Bilingualism
+* Words per day
+
+## Health
+* Vaccines
+* Cancers
+    * Chances, etc.
+* SIDS
+* Autism / ADD
+* Obesity
+    * Parents weight
+    * over time
+    * soft drinks
+    * addiction
+* Sex (and gender dysmorphia)
+
+## Safety
+* Ranking of risks
+    * Molestation vs. kidnapping vs. car accident vs. freak accident
+* Changes in principal causes of death over time
+
+## The long-term (how the 1st years affects long-term outcomes)
+* Birth order
+* Adoption
+* Food
+* Sports
+    * Neuromuscular development
+    * Throwing like a girl
+    * Which sport you are most likely to become an olympian in
+* Political affiliation
+* Marriage/divorce

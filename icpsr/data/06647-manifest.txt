@@ -1,0 +1,55 @@
+File Manifest for ICPSR 6647
+
+Laumann, Edward O., John H. Gagnon, Robert T. Michael, and Stuart Michaels.
+National Health and Social Life Survey, 1992: [United States]. ICPSR06647-
+v2. Ann Arbor, MI: Inter-university Consortium for Political and Social
+Research [distributor], 2008-04-17. http://doi.org/10.3886/ICPSR06647.v2
+
+Details on the version history can be found below the file listings.
+
+
+Study-level Documentation
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    06647-related_literature.txt        -       -         -       2015-08-11  -
+
+    06647-manifest.txt                  -       -         -       2015-08-12  -
+
+
+DS0001 National Health and Social Life Survey, 1992: [United States]
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    06647-0001-Codebook.pdf             -       -         -       2008-04-17  edc54f5bf6b1d510ef1915d975af00c3
+
+    06647-0001-Data.dta                 -       3,432     1634    2008-04-17  62b78d9db69428f207ad156a0f238981
+
+    06647-0001-Data.sav                 -       3,432     1634    2008-04-17  41fdf7cf0e3af73a4b44d70ca95cd791
+
+    06647-0001-Data.stc                 -       3,432     1634    2008-04-17  04ff2071ea652775a4b8ea6aca6810e2
+
+    06647-0001-Data.tsv                 -       3,432     1634    2008-04-17  bfdee175b416690aae61d2c07b4ca9f2
+
+    06647-0001-Data.txt                 3107    3,432     1634    1996-01-19  75bb82492cfbed7e0e70025db066ef7f
+
+    06647-0001-Frequencies.pdf          -       -         -       2008-04-17  66d24d5d83f8f12f1136a76d6f9cb233
+
+    06647-0001-Setup.dct                -       -         -       2008-04-17  b211dd7c03febb26fdba03007eb2df27
+
+    06647-0001-Setup.do                 -       -         -       2008-04-17  025b53da58d087369213f828972956e8
+
+    06647-0001-Setup.sas                -       -         -       2008-04-17  390ebc507e5f371acb83a0a9b889d22b
+
+    06647-0001-Setup.sps                -       -         -       2008-04-17  b9c3a851666ee9ea49f40df00c5ca7b7
+
+
+Version History
+
+2008-04-17 Duplicate value labels were removed from  the SPSS setup. Three
+incorrect and superfluous value labels for  variable FIRSTVI were removed
+from the SPSS setup, codebook, and  frequencies. ICPSR produced a Stata
+setup and SAS, SPSS, Stata, and  tab-delimited versions of the data. In
+addition, the codebook and frequencies were converted to PDF format.

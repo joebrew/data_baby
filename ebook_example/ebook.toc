@@ -1,0 +1,5 @@
+\contentsline {chapter}{Contents}{2}{section*.1}
+\contentsline {part}{\partnumberline {I}The Fairy Tales}{4}{part.1}
+\contentsline {chapter}{\chapternumberline {1}Little Red Riding Hood}{5}{chapter.1}
+\contentsline {chapter}{\chapternumberline {2}Hansel and Gretel}{13}{chapter.2}
+\contentsline {chapter}{\chapternumberline {3}Rupunzel}{28}{chapter.3}
