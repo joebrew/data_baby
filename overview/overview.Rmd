@@ -1,3 +1,6 @@
+---
+output: pdf_document
+---
 ## The concept
 
 "Data Baby" is a humorous and visually rich book which attempts to answer - using data - the "I wonder" questions that all parents have.  "Data Baby" won't address the most recent medical protocol regarding infant vaccinations, vitamin supplementation during pregancy, or other serious and important topics to which a plethora of books are already devoted.  Rather, it will take readers on an informative (but somewhat absurd) data-driven journey all the way from foreplay to pre-k, stopping along the way to ponder questions like:   
@@ -15,10 +18,10 @@ Along the way, we'll take a few unexpected detours (like why elite athletes are 
 
 ## The author
 
-Joe Brew is a 29 year-old data scientist, statistician and epidemiologist. He works for Lendable (a bay area developing world finance start-up) and the Florida Department of Health, and has experience working for public health agencies and organizations in the US, Ethiopia, Togo, Spain and Denmark.  
+Joe Brew is a 29 year-old data scientist, statistician and epidemiologist. He works for Lendable (a bay area developing world finance start-up) and the Florida Department of Health, and has experience working for public health agencies and organizations in the US, Ethiopia, Togo, Spain and Denmark.  He has a 3 month-old daughter.
 
 
-#### Writing examples:  
+#### Writing examples   
 
 
 Miscellaneous:  
@@ -82,11 +85,14 @@ _Alice Bradley, Eden M. Kennedy_
 _Jena Pincott_  
 41 customer reviews  
 
+\newpage  
 
 ## The market
 The market is saturated with pregnancy and parenting books (an indication of high demand), but very few are even remotely data-driven or data-related.  
 
-An Amazon search for "data baby" yields mostly electronic devices. Searching for "baby data" yields lots of hits related to "baby", but very few related to "data".
+An Amazon search for "data baby" yields mostly electronic devices. Searching for "baby data" yields lots of hits related to "baby", but very few related to "data".  
+
+
 ![Search results](amazon_search.png)
 
 

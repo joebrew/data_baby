@@ -1,16 +1,16 @@
 ---
-title: "Data Baby (outline)"
-output: html_document
+title: "Data Baby (outline/ideas)"
+output: pdf_document
 ---
 
-A walk through the numbers, from conception through infancy
+(incomplete)
 
 ## Conception
-* Sexual frequency  
+* Sexual frequenc
 * Timing 
-    * Menstrual cycle and how it affects fertility  
+    * Menstrual cycle and how it affects fertility
     * Time of year - sports, academic outcomes, etc.
-* Stress and fertility 
+* Stress and fertility
     * Individual level
     * Group level (birth rates before and after catastrophes, etc.)
 * Gender
