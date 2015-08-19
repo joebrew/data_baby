@@ -8,7 +8,7 @@ my_theme <- theme(
   panel.grid.major = element_line(colour = "grey80"),
   panel.grid.minor = element_blank(),
   panel.background = element_rect(fill = "white"),
-  panel.border = element_rect(colour = "black", fill=NA, size=1),
-  text = element_text(size = 12, family = 'Times New Roman')
+  panel.border = element_rect(colour = "black", fill=NA, size=1)
+  #text = element_text(size = 12, family = 'Times New Roman'),
   #plot.background = element_rect(colour = 'black', fill = 'white')
 )

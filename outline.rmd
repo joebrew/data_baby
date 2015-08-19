@@ -6,7 +6,7 @@ output: pdf_document
 (incomplete)
 
 ## Conception
-* Sexual frequenc
+* Sexual frequency
 * Timing 
     * Menstrual cycle and how it affects fertility
     * Time of year - sports, academic outcomes, etc.
@@ -28,8 +28,7 @@ output: pdf_document
 * Who
     * Fertility by race, age, marital status, etc.
 * How
-    * Procedures and costs
-        * By country
+    * Procedures and costs by country, etc
 * How much
     * Cost by country
 
