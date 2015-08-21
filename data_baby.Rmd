@@ -53,16 +53,49 @@ root_dir <- "/home/joebrew/Documents/data_baby/"
 source('helpers/my_theme.R')
 ```
 
-# Conception  
+# Chapter 1. Conception  
 
 ## It all starts with sex  
 
-You aren’t the only ones doing it, you know.  Of the 7 billion humans on earth, 4.6 billion are sexually active, and more than 3 billion have had sex in the last week.  The average adult is getting it on about 1.4 times per week.  
+You aren’t the only ones doing it, you know.  Of the approximately 7 billion humans on earth, about 5.4 billion are "sexually mature" (ie, old enough to reproduce), and about two thirds (3.6 billion people) have had sex in the last week.  
+
+The average duration of intercourse (not counting pre-sex foreplay or post-sex remorse) is 7.3 minutes, but about half of bouts last less than 2 minutes (my condolences, ladies).  Since the average adult is getting it on about 1.4 times per week, this means that when you and your significant other are rocking the bed, you’ll be joined by 10.9 million other sweaty, fleshy, grunty earthlings all doing the same thing, at the exact same time.  In other words, if you put everyone engaging in intercourse at any given time in one place, you would fill New York City.  Stage fright, anyone?
+
+Now before you get too depressed thinking of all those people having sex while you're sitting here reading a book, realize that even the most permiscuous among us only have sex four to five thousand times over the course of a full life.  And though it may appear that we devote 99.9% of our thoughts to it, we spend less than 0.1% of our lives actually engaging in intercourse, far less than the amount of time we spend stuck in traffic, watching commercials or grocery shopping.  And if that's not enough to cheer you up, recall that sexual activity varies widely by age - so unless you're under 24 (in which case you're probably too busy having sex to be reading this book), most of your peers aren't exactly getting it on that much either. 
+
 
 ```{r}
-suppressWarnings(source(paste0(root_dir, 'frequency_sex/code/icpsr.R')))
+# # How many others are having sex at same time
+# adults <- 5400000000
+# times <- 1.4
+# minutes <- 7.3
+# minutes_in_a_week <- 60*24*7
+# divide_by <- 1000
+# 
+# dist <- sample(seq(1, minutes_in_a_week, length = 1000000), (adults*times/divide_by), replace = TRUE)
+# 
+# random_time <- 5000
+# 
+# length(which(dist >= (random_time - 7.3) & dist <= (random_time + 7.3))) * divide_by
+# length(which(abs(dist - random_time) <= 7.3)) * divide_by
+# 
+# # 10.967,000
+
+# # How many times in your life?
+
+
 ```
 
+```{r}
+suppressWarnings(source(paste0(root_dir, 'frequency_sex/code/frequency_sex.R')))
+```
+
+```{r, fig.width= 8, fig.height = 5, fig.align = 'center'}
+plot_frequency_by_age()
+```
+
+
+By the time we're about 17, most of us have at least given sex a go (to varying degrees of success), and by the time we're 30, nearly all of us have.  
 
 ```{r}
 suppressWarnings(source(paste0(root_dir, 'icpsr/code/icpsr.R')))
@@ -73,8 +106,49 @@ suppressWarnings(source(paste0(root_dir, 'icpsr/code/icpsr.R')))
 age_first_vi()
 ```
 
-The average duration of intercourse (not counting pre-sex foreplay or post-sex cuddling/remorse) is 3 minutes and 12 seconds. My condolences, ladies.  This means that when you and honey are rocking the bed, you’ll be joined by 1.2 million other sweaty, fleshy, grunty earthlings all doing the same thing, at the exact same time.  Stage fright, anyone?
+But despite the warnings from mom, dad and the poor souls assigned to teach us "sex education" when we're teenagers, getting it on doesn’t necessarily mean having a baby.  In fact, it _very_ rarely does.  The modern American woman will have sex more than 4,000 times in her life (with about 4 different people), resulting in 4.1 pregnancies and 2.3 children.  
 
-Of course sex doesn’t necessarily mean conception.  In fact, it very rarely does.  The modern American woman will have sex about 3,450 times in her life, resulting in 4.1 pregnancies and 2.3 children.  Most of the pregnancies not ending in childbirth will end spontaneously in the first few weeks after conception - and the woman most often will not be aware.  The number of medical abortions per year - approximately 48,000 - constitutes approximately 1.5% of all (known) pregnancies in the US.  This number 
+```{r, fig.width= 6, fig.height = 3, fig.align = 'center'}
+vec <- c(nothing = 4300,
+                 pregnancy = 4,
+                 baby = 2)
+colors <- brewer.pal(n = 5, name = 'Spectral')
+colors <- colors[c(5,4,1)]
+library(waffle)
+waffle(parts = vec,
+       rows = 20, 
+       size = 0,
+       colors = colors,
+       title = 'Breakdown of sex outcomes',
+       xlab = '1 square = 1 act of intercourse')
+# barplot(vec,
+#         col = colors,
+#         xlab = 'Result',
+#         ylab = 'Times',
+#         border = 'black',
+#         main = 'What happens after sex?',
+#         yaxt = 'n',
+#         ylim = c(0, max(vec) * 1.03),
+#         cex.names = 0.7)
+# box('plot')
+# axis(side = 2, at = seq(0, 10000, 1000), labels = seq(0, 10000, 1000),
+#      cex.axis = 0.7, las = 1)
+```
+
+In other words, you get one baby for every 2,000 acts of intercourse - not the most efficient system.  The rarity of reproduction owes itself, in part, to the rarity of conception thanks the high availability of birth control.  
+
+```{r, fig.width= 6, fig.height = 3, fig.align = 'center'}
+vals <- seq(0, 20, length = 100) ^ (1.5)
+x <- seq(1900, 2015, length = length(vals))
+plot(x, vals, type = 'l', 
+     main = 'Placeholder chart about contraception',
+     xlab = 'Year',
+     ylab = 'Percentage')
+```
+
+But even in countries and at times where contraception was not largely available, it still took several hundred attempts to make a baby.  Part of the reason is that slightly more than half of the pregnancies not ending in childbirth will end spontaneously in the first few weeks after conception - and the woman most often will not be aware.  The number of medical abortions per year ...[unfinished]
+
+
+
 
 

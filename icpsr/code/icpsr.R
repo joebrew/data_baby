@@ -67,11 +67,11 @@ age_first_vi <- function(){
            p_cum = n_cum / n_cum[length(n_cum)])
   
   g <- ggplot(data = temp, aes(x = FIRSTVI, y = p_cum * 100)) +
-    geom_area(fill = 'grey20', alpha = 0.8) +
+    geom_area(fill = '#2B83BA', alpha = 0.8) +
     xlim(10, 30) +
     xlab('Age') +
-    ylab('Cumulative percentage') +
-    ggtitle('Age of first vaginal intercourse') +
+    ylab('Percentage') +
+    ggtitle('Age at first intercourse') +
     my_theme
   return(g)
 }
