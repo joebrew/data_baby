@@ -57,6 +57,7 @@ source('helpers/my_theme.R')
 
 ## It all starts with sex  
 
+
 You aren’t the only ones doing it, you know.  Of the approximately 7 billion humans on earth, about 5.4 billion are "sexually mature" (ie, old enough to reproduce), and about two thirds (3.6 billion people) have had sex in the last week.  
 
 The average duration of intercourse (not counting pre-sex foreplay or post-sex remorse) is 7.3 minutes, but about half of bouts last less than 2 minutes (my condolences, ladies).  Since the average adult is getting it on about 1.4 times per week, this means that when you and your significant other are rocking the bed, you’ll be joined by 10.9 million other sweaty, fleshy, grunty earthlings all doing the same thing, at the exact same time.  In other words, if you put everyone engaging in intercourse at any given time in one place, you would fill New York City.  Stage fright, anyone?
@@ -135,18 +136,25 @@ waffle(parts = vec,
 #      cex.axis = 0.7, las = 1)
 ```
 
-In other words, you get one baby for every 2,000 acts of intercourse - not the most efficient system.  The rarity of reproduction owes itself, in part, to the rarity of conception thanks the high availability of birth control.  
+## Why so few babies?  
+
+In other words, in modern day America, for every 2,000 times you stick it in, 1 baby comes out - not the most efficient system.  In fact, across the entire world, despite increasing lifespans, new medical alternatives for those previously considered infertile, and phenomenally low fetal mortality, baby-making is becoming less and less common. The rarity of reproduction owes itself, in part, to the rarity of conception; birth control is more widely available and commonly used now than in any time in history.  
 
 ```{r, fig.width= 6, fig.height = 3, fig.align = 'center'}
+par(mfrow = c(1,2))
 vals <- seq(0, 20, length = 100) ^ (1.5)
 x <- seq(1900, 2015, length = length(vals))
 plot(x, vals, type = 'l', 
      main = 'Placeholder chart about contraception',
+     cex.main = 0.7,
      xlab = 'Year',
      ylab = 'Percentage')
+library(maps)
+map('world')
+title(main = 'Placeholder map about birth control', cex.main = 0.7)
 ```
 
-But even in countries and at times where contraception was not largely available, it still took several hundred attempts to make a baby.  Part of the reason is that slightly more than half of the pregnancies not ending in childbirth will end spontaneously in the first few weeks after conception - and the woman most often will not be aware.  The number of medical abortions per year ...[unfinished]
+But even in countries where contraception is not yet largely available, it still takes several hundred attempts to make a baby.  Part of the reason is that slightly more than half of the pregnancies not ending in childbirth will end spontaneously in the first few weeks after conception - and the woman most often will not be aware.  The number of medical abortions per year ...[unfinished]
 
 
 
