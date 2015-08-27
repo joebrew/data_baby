@@ -74,7 +74,7 @@ plot_frequency_by_age <- function(){
       legend('top',
              fill = rev(colors),
              legend = df$Status[1:5],
-             cex = 0.8,
+             cex = 01,
              border = NA,
              bty = 'n')
       par(mar = c(4,4,2,1), xpd = FALSE)

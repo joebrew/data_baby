@@ -62,8 +62,7 @@ You aren’t the only ones doing it, you know.  Of the approximately 7 billion h
 
 The average duration of intercourse (not counting pre-sex foreplay or post-sex remorse) is 7.3 minutes, but about half of bouts last less than 2 minutes (my condolences, ladies).  Since the average adult is getting it on about 1.4 times per week, this means that when you and your significant other are rocking the bed, you’ll be joined by 10.9 million other sweaty, fleshy, grunty earthlings all doing the same thing, at the exact same time.  In other words, if you put everyone engaging in intercourse at any given time in one place, you would fill New York City.  Stage fright, anyone?
 
-Now before you get too depressed thinking of all those people having sex while you're sitting here reading a book, realize that even the most permiscuous among us only have sex four to five thousand times over the course of a full life.  And though it may appear that we devote 99.9% of our thoughts to it, we spend less than 0.1% of our lives actually engaging in intercourse, far less than the amount of time we spend stuck in traffic, watching commercials or grocery shopping.  And if that's not enough to cheer you up, recall that sexual activity varies widely by age - so unless you're under 24 (in which case you're probably too busy having sex to be reading this book), most of your peers aren't exactly getting it on that much either. 
-
+Now before you get too depressed thinking of all those people having sex while you're sitting here reading a book, recall that sexual activity varies widely by age - so unless you're under 24 (in which case you're probably too busy having sex to be reading this book), most of your peers aren't exactly getting it on that much either. 
 
 ```{r}
 # # How many others are having sex at same time
@@ -95,8 +94,22 @@ suppressWarnings(source(paste0(root_dir, 'frequency_sex/code/frequency_sex.R')))
 plot_frequency_by_age()
 ```
 
+And if that's not enough to cheer you up, realize that even the most permiscuous among us spend less than 0.1% of our time on earth engaged in the act, far less than the amount of time we spend stuck in traffic, watching commercials, grocery shopping or, well, jerking off. 
 
-By the time we're about 17, most of us have at least given sex a go (to varying degrees of success), and by the time we're 30, nearly all of us have.  
+Like our primate cousins, humans enjoy sex and generally have less of it than we'd like.  So, we supplement with, ahem, self love. Half of boys and about a quarter of girls have masturbated by the time they become teenagers.  But contrary to the popular belief that adolescent boys are the kings of chicken-choking, the frequency of wanking actually peaks (among both sexes) in the 25-29 year-old age group. 
+
+```{r}
+suppressWarnings(source(paste0(root_dir, 'frequency_masturbation/code/frequency_masturbation.R')))
+
+```
+
+```{r, fig.width= 7, fig.height = 3, fig.align = 'center'}
+# MASTURBATION FREQUENCY BY AGE
+wank_off_by_age()
+```
+
+
+By the time we're about 17, most of us have branched out to actually having sex with other people. Males report a slightly earlier start than females (16.9 vs 17.4 years), but teenage males might not be the most accurate self-reporters.  Regardless of the exact start, it appears that by the time we're 30, nearly all of us have given sex a go.  
 
 ```{r}
 suppressWarnings(source(paste0(root_dir, 'icpsr/code/icpsr.R')))
@@ -140,18 +153,28 @@ waffle(parts = vec,
 
 In other words, in modern day America, for every 2,000 times you stick it in, 1 baby comes out - not the most efficient system.  In fact, across the entire world, despite increasing lifespans, new medical alternatives for those previously considered infertile, and phenomenally low fetal mortality, baby-making is becoming less and less common. The rarity of reproduction owes itself, in part, to the rarity of conception; birth control is more widely available and commonly used now than in any time in history.  
 
-```{r, fig.width= 6, fig.height = 3, fig.align = 'center'}
-par(mfrow = c(1,2))
-vals <- seq(0, 20, length = 100) ^ (1.5)
-x <- seq(1900, 2015, length = length(vals))
-plot(x, vals, type = 'l', 
-     main = 'Placeholder chart about contraception',
-     cex.main = 0.7,
-     xlab = 'Year',
-     ylab = 'Percentage')
+```{r, fig.width= 6, fig.height = 4.5, fig.align = 'center'}
+# par(mfrow = c(1,2))
+# vals <- seq(0, 20, length = 100) ^ (1.5)
+# x <- seq(1900, 2015, length = length(vals))
+# plot(x, vals, type = 'l', 
+#      main = 'Placeholder chart about contraception',
+#      cex.main = 0.7,
+#      xlab = 'Year',
+#      ylab = 'Percentage')
 library(maps)
-map('world')
-title(main = 'Placeholder map about birth control', cex.main = 0.7)
+par(mar = c(0,0,0,0))
+
+map('world', lwd = 0.1)
+title(main = 'Placeholder map about birth control', cex.main = 1)
+x <- c(-2, 138, 3, 4, 32, -57, 23, 174, -75, -123)
+y <- c(57, -34, 36, 52, 39, -25, 37, -36, 40, 40)
+sizes <- abs(rnorm(mean = 3, sd = 1, n = length(x)))
+points(x, y, cex = sizes, pch = 16, col = adjustcolor('darkred', alpha. = 0.2))
+points(x,y, cex = sizes)
+
+par(mar = c(5.1, 4.1, 4.1, 2.1))
+
 ```
 
 But even in countries where contraception is not yet largely available, it still takes several hundred attempts to make a baby.  Part of the reason is that slightly more than half of the pregnancies not ending in childbirth will end spontaneously in the first few weeks after conception - and the woman most often will not be aware.  The number of medical abortions per year ...[unfinished]
