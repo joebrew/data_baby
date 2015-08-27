@@ -109,7 +109,7 @@ age_first_vi()
 
 But despite the warnings from mom, dad and the poor souls assigned to teach us "sex education" when we're teenagers, getting it on doesn’t necessarily mean having a baby.  In fact, it _very_ rarely does.  The modern American woman will have sex more than 4,000 times in her life (with about 4 different people), resulting in 4.1 pregnancies and 2.3 children.  
 
-```{r, fig.width= 6, fig.height = 3, fig.align = 'center'}
+```{r, fig.width= 6, fig.height = 3, fig.align = 'center', eval = FALSE}
 vec <- c(nothing = 4300,
                  pregnancy = 4,
                  baby = 2)
